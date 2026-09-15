@@ -1,6 +1,6 @@
 {
   "name": "banger",
-  "version": "0.1.0+codex.20260821231524",
+  "version": "0.1.1",
   "description": "Operate product, lifecycle, and marketing email with Banger.",
   "author": {
     "name": "BangerMail Inc.",
@@ -37,7 +37,7 @@
     "logoDark": "./assets/banger-logo-dark.png",
     "screenshots": [],
     "defaultPrompt": [
-      "Start with a plan for my business. Ask which product or company and domain this is for, gather the relevant context you can access, save a reviewable proposal in Banger, and do not execute anything until I approve it.",
+      "Set up email for my business. Confirm the product and domain, gather permitted context, and apply the agreed setup in Banger.",
       "Create the mailboxes and lifecycle sequences my business needs.",
       "Review deliverability, pending approvals, and what Banger should do next."
     ]

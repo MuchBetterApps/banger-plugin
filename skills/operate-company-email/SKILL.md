@@ -14,9 +14,19 @@ Use the product's canonical vocabulary in every user-facing response: **Mailboxe
 - OAuth authorization itself completes the browser's agent-connection checkpoint. Do not send a connection-test email during normal onboarding. Call `banger_onboarding_send_agent_test` only when the user explicitly asks for an optional connection diagnostic.
 - When the user asks to “Plan the email growth system”, chooses “Start with a plan for your business”, asks for an email growth strategy, or requests a business-wide plan, follow the plan-only workflow below. Do not treat the request as approval to implement it.
 - For a new or incomplete workspace, call `banger_onboarding_open_setup` first and follow its current `next_action`.
-- For a normal request, inspect only the Banger objects required for the task, then act or prepare an approval.
+- For a concrete request, inspect the required Banger objects and execute the requested routine operations directly. Plan-only and draft-only requests remain unsent.
 - For a broad growth request, gather existing product context from available connected sources before asking the user for information already available.
 - Prefer the interactive Banger setup UI returned by `banger_onboarding_open_setup` when the client supports MCP Apps. The same canonical tools remain the fallback.
+
+## Direct requests and Journey review
+
+A clear request to save, import, create a Mailbox, send Product email, or send or schedule a Broadcast authorizes that concrete task. Use the canonical tools and immutable execution receipts. Do not add a design-approval loop or send the user to Approvals for routine work. Email previews and feedback are optional unless the user requests them or missing content needs clarification. The default policy has no 50-recipient human-review limit; real sending allowances and readiness checks still apply. Respect any stricter policy explicitly saved by the workspace or automation.
+
+A Journey needs one human review before its first activation and after material changes to its sender, audience scope, trigger, designs, steps, timing, or exits. Prepare the complete sending setup and show each distinct email and variant before requesting that review. Use `banger_set_journey_status` for activation; it creates the immutable request. The person decides any required human review in Banger's Approvals surface. Never impersonate that decision or pass a fabricated approval flag.
+
+An unchanged, reviewed Journey can resume, enroll eligible contacts within its approved scope, and send automatically without another review. A rename or internal note does not invalidate its review. Already-running Journeys may retain their unchanged legacy setup during the policy upgrade; this is execution continuity, not evidence of a human review. Their next activation or sending change requires review.
+
+Domain migration and credential authorization retain their specific human authorization boundaries. Routine onboarding implementation records the user's acceptance of the current plan directly by default; this cannot decide a human Journey approval or authorize domain migration.
 
 ## Onboard from canonical state
 
@@ -64,7 +74,7 @@ Make the first recommendation executable: name its audience, trigger, messages, 
 - Use idempotency keys for governed mutations and sends.
 - Respect requested scopes and workspace approval policies.
 - Never manufacture Mailboxes, delivery, DNS verification, Broadcast launches, or completed Journey runs.
-- Re-read canonical state after a mutation before reporting completion.
+- Re-read canonical state after a mutation before reporting completion. Distinguish saved, queued, scheduled, sent, delivered, blocked, and awaiting Journey review. Provider acceptance is not inbox delivery.
 - If a tool fails, report the failed operation and returned error. Do not silently substitute a semantically different action.
 - Keep credentials and provider secrets inside Banger's authorization or connection pages.
 - Use Banger's pending actions and audit history to explain what happened and what still requires review.

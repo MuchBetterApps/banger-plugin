@@ -5,7 +5,7 @@
   "source": {
     "source": "url",
     "url": "https://github.com/MuchBetterApps/banger-plugin.git",
-    "sha": "REPLACE_WITH_40_CHAR_COMMIT_SHA_FROM_git_ls-remote"
+    "sha": "FILL_FROM_publish-agent-plugin.sh_OUTPUT"
   },
   "homepage": "https://bangermail.com/banger-mcp/",
   "keywords": ["banger", "bangermail", "banger mail", "banger email"],
