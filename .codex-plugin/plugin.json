@@ -1,0 +1,46 @@
+{
+  "name": "banger",
+  "version": "0.1.0+codex.20260821231524",
+  "description": "Operate product, lifecycle, and marketing email with Banger.",
+  "author": {
+    "name": "BangerMail Inc.",
+    "email": "hello@team.bangermail.com",
+    "url": "https://bangermail.com/"
+  },
+  "homepage": "https://bangermail.com/banger-mcp/",
+  "repository": "https://github.com/MuchBetterApps/mba",
+  "license": "Proprietary",
+  "keywords": [
+    "email",
+    "marketing",
+    "transactional-email",
+    "campaigns",
+    "automation"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Banger",
+    "shortDescription": "Run company email with agents",
+    "longDescription": "Send and receive company email, create mailboxes, operate transactional email, build campaigns and sequences, manage audiences, monitor delivery, and run governed automations with Banger.",
+    "developerName": "BangerMail Inc.",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://bangermail.com/",
+    "privacyPolicyURL": "https://bangermail.com/privacy/",
+    "termsOfServiceURL": "https://bangermail.com/terms/",
+    "brandColor": "#C9FF2B",
+    "composerIcon": "./assets/banger-app-icon-128.png",
+    "logo": "./assets/banger-logo.png",
+    "logoDark": "./assets/banger-logo-dark.png",
+    "screenshots": [],
+    "defaultPrompt": [
+      "Start with a plan for my business. Ask which product or company and domain this is for, gather the relevant context you can access, save a reviewable proposal in Banger, and do not execute anything until I approve it.",
+      "Create the mailboxes and lifecycle sequences my business needs.",
+      "Review deliverability, pending approvals, and what Banger should do next."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

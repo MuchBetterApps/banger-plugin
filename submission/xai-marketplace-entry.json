@@ -1,0 +1,13 @@
+{
+  "name": "banger",
+  "description": "Banger company email for agents. Create Mailboxes, send Product email, run Journeys and Broadcasts, manage audiences, review Approvals, and inspect Logs through Banger's governed MCP server, with a skill that turns product context into a reviewable email growth plan.",
+  "category": "productivity",
+  "source": {
+    "source": "url",
+    "url": "https://github.com/MuchBetterApps/banger-plugin.git",
+    "sha": "REPLACE_WITH_40_CHAR_COMMIT_SHA_FROM_git_ls-remote"
+  },
+  "homepage": "https://bangermail.com/banger-mcp/",
+  "keywords": ["banger", "bangermail", "banger mail", "banger email"],
+  "domains": ["bangermail.com"]
+}

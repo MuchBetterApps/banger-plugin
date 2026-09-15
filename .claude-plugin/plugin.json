@@ -1,0 +1,23 @@
+{
+  "name": "banger",
+  "version": "0.1.0",
+  "description": "Operate product, lifecycle, and marketing email with Banger: Mailboxes, Journeys, Broadcast, Product email, Approvals, and Logs through one governed MCP connection.",
+  "author": {
+    "name": "BangerMail Inc.",
+    "email": "hello@team.bangermail.com",
+    "url": "https://bangermail.com/"
+  },
+  "homepage": "https://bangermail.com/banger-mcp/",
+  "repository": "https://github.com/MuchBetterApps/banger-plugin",
+  "license": "Proprietary",
+  "keywords": [
+    "banger",
+    "bangermail",
+    "email",
+    "transactional-email",
+    "email-marketing",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

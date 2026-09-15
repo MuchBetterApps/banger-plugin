@@ -1,0 +1,33 @@
+{
+  "name": "banger",
+  "description": "Banger company email for agents: Mailboxes, Journeys, Broadcast, Product email, Approvals, and Logs.",
+  "owner": {
+    "name": "BangerMail Inc.",
+    "email": "hello@team.bangermail.com",
+    "url": "https://bangermail.com/"
+  },
+  "metadata": {
+    "description": "Banger company email for agents: Mailboxes, Journeys, Broadcast, Product email, Approvals, and Logs."
+  },
+  "plugins": [
+    {
+      "name": "banger",
+      "source": "./",
+      "description": "Operate product, lifecycle, and marketing email with Banger through one governed MCP connection.",
+      "author": {
+        "name": "BangerMail Inc.",
+        "url": "https://bangermail.com/"
+      },
+      "homepage": "https://bangermail.com/banger-mcp/",
+      "repository": "https://github.com/MuchBetterApps/banger-plugin",
+      "license": "Proprietary",
+      "category": "productivity",
+      "keywords": [
+        "banger",
+        "bangermail",
+        "banger mail",
+        "banger email"
+      ]
+    }
+  ]
+}

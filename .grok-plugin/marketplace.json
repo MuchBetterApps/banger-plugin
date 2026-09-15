@@ -1,0 +1,19 @@
+{
+  "name": "banger",
+  "description": "Banger company email for agents: Mailboxes, Journeys, Broadcast, Product email, Approvals, and Logs.",
+  "owner": {
+    "name": "BangerMail Inc.",
+    "url": "https://bangermail.com/"
+  },
+  "plugins": [
+    {
+      "name": "banger",
+      "description": "Operate product, lifecycle, and marketing email with Banger through one governed MCP connection: create Mailboxes, send Product email, run Journeys and Broadcasts, manage audiences, review Approvals, and inspect Logs.",
+      "category": "productivity",
+      "source": "./",
+      "homepage": "https://bangermail.com/banger-mcp/",
+      "keywords": ["banger", "bangermail", "banger mail", "banger email"],
+      "domains": ["bangermail.com"]
+    }
+  ]
+}

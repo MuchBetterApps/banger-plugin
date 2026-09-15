@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "banger": {
+      "type": "http",
+      "url": "https://api.bangermail.com/mcp",
+      "oauth_resource": "https://api.bangermail.com/mcp"
+    }
+  }
+}
