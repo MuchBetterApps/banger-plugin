@@ -1,6 +1,6 @@
 {
   "name": "banger",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Operate product, lifecycle, and marketing email with Banger.",
   "author": {
     "name": "BangerMail Inc.",
@@ -8,7 +8,7 @@
     "url": "https://bangermail.com/"
   },
   "homepage": "https://bangermail.com/banger-mcp/",
-  "repository": "https://github.com/MuchBetterApps/mba",
+  "repository": "https://github.com/MuchBetterApps/banger-plugin",
   "license": "Proprietary",
   "keywords": [
     "email",
@@ -21,7 +21,7 @@
   "interface": {
     "displayName": "Banger",
     "shortDescription": "Run company email with agents",
-    "longDescription": "Send and receive company email, create mailboxes, operate transactional email, build campaigns and sequences, manage audiences, monitor delivery, and run governed automations with Banger.",
+    "longDescription": "Send and receive company email on your own domain with Banger: create Mailboxes, send Product email from your app, build Journeys that follow up automatically, run Broadcasts to your audience, manage contacts and segments, check delivery in Logs, and review every governed send in Approvals.",
     "developerName": "BangerMail Inc.",
     "category": "Productivity",
     "capabilities": [
@@ -38,7 +38,7 @@
     "screenshots": [],
     "defaultPrompt": [
       "Set up email for my business. Confirm the product and domain, gather permitted context, and apply the agreed setup in Banger.",
-      "Create the mailboxes and lifecycle sequences my business needs.",
+      "Create the Mailboxes and Journeys my business needs.",
       "Review deliverability, pending approvals, and what Banger should do next."
     ]
   },
