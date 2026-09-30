@@ -72,5 +72,5 @@ in chat.
 
 ## License
 
-Proprietary. Copyright BangerMail Inc. Use of the hosted service is governed by
+Proprietary; see [LICENSE](LICENSE). Copyright BangerMail Inc. Use of the hosted service is governed by
 the Banger Terms of Service.
